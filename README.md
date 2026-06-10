@@ -26,6 +26,7 @@ The game ends when either:
 - Decouple TPS from FPS so game speed becomes independent of rendering performance
 - Add multiple quiz categories and difficulty levels
 - Add a system of uploading custom question sets
+- Support for other languages
 - Bigger font or adjustable font size
 - Save high scores to a file
 
@@ -33,6 +34,7 @@ The game ends when either:
 - Quiz questions are currently available only in Czech
 - Current snake movement speed is tied to the update loop (TPS = FPS), causing gameplay speed to vary with performance
 - The game cannot be exited during gameplay
+  - This was an intentional simplification in the original version, which was developed for a school event.
 
 ## Screenshot
 ![In-game question pop-up](/GitHub.png)
