@@ -31,6 +31,7 @@ The game ends when either:
 - Save high scores to a file
 
 ## Known limitations:
+- Game properly works only on 1920x1080 screens
 - Quiz questions are currently available only in Czech
 - Current snake movement speed is tied to the update loop (TPS = FPS), causing gameplay speed to vary with performance
 - The game cannot be exited during gameplay
