@@ -16,6 +16,7 @@ package main;
 
 import javax.swing.JFrame;
 import java.awt.*;
+import main.GamePanel;
 
 public class Main {
     public static JFrame window = new JFrame();

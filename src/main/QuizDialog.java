@@ -70,7 +70,6 @@ public class QuizDialog extends JDialog {
         TimerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         add(TimerLabel);
 
-        //
         SubmitButton.addActionListener(e -> {
             TimeLeft--;
             TimerLabel.setText("Time: " + TimeLeft);
@@ -78,7 +77,7 @@ public class QuizDialog extends JDialog {
             CheckAnswer(Text, QuizQuestion.getCorrectAnswer());
         });
 
-        // --- COUNTDOWN TIMER ---
+        // Countdown timer
         Timer = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -86,7 +85,6 @@ public class QuizDialog extends JDialog {
                 TimerLabel.setText(String.format("00:%02d", TimeLeft));
 
                 if (TimeLeft <= 0) {
-                    // TIME IS UP!
                     Result = false;
                     Timer.stop();
                     dispose(); // Close window
@@ -106,7 +104,6 @@ public class QuizDialog extends JDialog {
         dispose(); // Close the window
     }
 
-    // This method lets GamePanel ask "Did they get it right?"
     public boolean getResult() {
         return Result;
     }

@@ -41,7 +41,7 @@ public class Snake {
         body.add(new Point(x, y + gp.snakeSquareSide));
         body.add(new Point(x, y + gp.snakeSquareSide*2));
 
-//        body.add(new Point(x, y + gp.snakeSquareSide*3));  COLLISION CHECKING
+//        body.add(new Point(x, y + gp.snakeSquareSide*3));
 //        body.add(new Point(x, y + gp.snakeSquareSide*4));
     }
     public void getSnakeImage(){
@@ -135,9 +135,9 @@ public class Snake {
             gp.GameStateOver = true;
             // YouLostScreen();
         }
-        for (int i = 4; i < body.size(); i++){ // Kontrolujeme od 5. bloku těla (tedy od indexu 4), jelikož to je nejnižší délka těla hada, kdy může dojít ke kolizi hlavy a těla
+        for (int i = 4; i < body.size(); i++){ // We check from 5th body tile (there from the index 4), since it is the shortest body length, when a head-body collision can occur
             Point p = body.get(i);
-            if((p.x - 3 < x && p.x + 3 > x) && (p.y - 3 < y && p.y + 3 > y)){  // Pojistka, kdyby se vykolejily validní x nebo y souřadnice hlavy nebo těla o pár pixelů
+            if((p.x - 3 < x && p.x + 3 > x) && (p.y - 3 < y && p.y + 3 > y)){  // The range is set just in-case the 'x' or 'y' become offseted by a couple pixels somewhere in the program.
 //                Collided = true;
 //                System.out.println("COLLISION");
 //                YouLostScreen();

@@ -129,10 +129,6 @@ public class GamePanel extends JPanel implements Runnable {
 
         Point head = Snake.body.get(0);
             if ((Apple.x > head.x - 7 && Apple.x < head.x + 7) && (Apple.y > head.y - 7 && Apple.y < head.y + 7)) {
-//                Snake.grow();
-//                score++;
-//                Apple.respawn();
-//                System.out.println("Yummy! " + score);
                 TriggerQuiz();
             }
     }
@@ -284,11 +280,11 @@ public class GamePanel extends JPanel implements Runnable {
                 System.out.println("Correct!");
                 Snake.grow();       // Grow snake
                 Apple.respawn();     // New food
-                Score++;         // Add score (Task 6)
+                Score++;
             } else {
                 // WRONG:
                 System.out.println("Wrong!");
-                Lives--;            // Lose life
+                Lives--;
                 Apple.respawn();     // Move food anyway so they don't get stuck
 
                 if (Lives <= 0) {

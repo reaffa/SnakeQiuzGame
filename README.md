@@ -8,6 +8,17 @@ The game ends when either:
 - The snake crashes into the wall
 - Snake collides with itself
 
+## Goal of the project
+I initially built this game as a project for a school event.
+
+I didn't approach it with any particular architecture in mind. The entire project was built in just a few days, which is why some parts of the implementation and the UI may feel rushed. I initially took inspiration from tutorials I found online and then gradually diverged from them as I added my own mechanics and ideas.
+
+I chose Java because I wanted to improve my skills in the language and experiment with object-oriented programming paradigm, as opposed to the more procedural style I have been practicing in C.
+
+Other reasons for choosing Java over C were the time pressure (I came up with the idea only a few days before the school event) and the ability to work at a higher level of abstraction without having to deal with some of the lower-level concerns I was used to in C. This tradeoff might result in a program with greater memory usage or runtime overhead, but this game isn't supposed to run anywhere else than on a modern desktop personal computer, so I don't see this as a concerning issue.
+
+This was my first ever take on a GUI software, excluding some websites I coded with HTML and CSS before tackling this project. It was interesting to move away from the traditional sequential design and learn to write an event-driven program, structured around one constant event loop, user input, timers and application state.
+
 ## How to run
 1. Clone/download this repository.
 2. Open the project in IntelliJ IDEA. (Currently not configured for VSCode.)
